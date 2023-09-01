@@ -25,4 +25,9 @@ public class ProdutosController {
         return produtoProcurado;
     }
 
+    @PostMapping
+    public Produto cadastrarNovoProdutoLoja(@RequestBody Produto dadosNovoProduto) {
+        return this.tabelaProdutos.cadastrarNovoProduto(dadosNovoProduto);
+    }
+
 }
